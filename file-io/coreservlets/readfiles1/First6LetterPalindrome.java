@@ -8,7 +8,7 @@ public class First6LetterPalindrome {
     String inputFile = "enable1-word-list.txt";
     String firstPalindrome = 
         Files.lines(Paths.get(inputFile))
-             .filter(word -> word.length() == 6)
+             .filter(word -> word.length() == 7)
              .filter(StringUtils::isPalindrome)
              .findFirst()
              .orElse(null);

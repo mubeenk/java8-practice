@@ -34,7 +34,7 @@ public class FourLetterWords {
     int length = 4;
     List<String> words =
         Files.lines(Paths.get(inputFile))
-             .filter(word -> word.length() == length)
+             .filter(word -> word.length() == length+3)
              .map(String::toUpperCase)
              .distinct()
              .sorted()
